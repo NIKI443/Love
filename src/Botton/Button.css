@@ -73,10 +73,10 @@
   /* позиционирование самого модального окна */
   .modalActive {
   top: calc(45% - 256px);
-  left: calc(71% - 286px);
+  left: calc(80% - 286px);
   
     position: absolute;
-    width: 350px;
+    width: 300px;
     height: 495px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
