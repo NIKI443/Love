@@ -1,0 +1,121 @@
+.button-exper{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+}
+.not{
+    position: absolute;
+    width: 120px;
+    height: 35px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #f054d39c;
+}
+.not.show{
+    position: static;
+    display: none;
+}
+.exper{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: url(https://i.pinimg.com/originals/ca/a3/12/caa312353cbc15c8f3ffb3a831b4c197.png);
+}
+.like{
+    margin: 200px 70px 0px 70px;
+
+    color:#df0000b0;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+.yes{
+    position: absolute;
+    z-index: 5;
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 120px;
+    height: 35px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #f054d3;
+}
+.yes.show{
+    position: static;
+}
+
+/* фон нашего модального окна */
+.modalBackground {
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(149, 149, 149, 0.8);
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .modalBackground.show{
+    opacity: 1;
+    visibility: visible;
+   
+  }
+  
+  /* позиционирование самого модального окна */
+  .modalActive {
+  top: calc(45% - 256px);
+  left: calc(71% - 286px);
+  
+    position: absolute;
+    width: 350px;
+    height: 495px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: default;
+    padding: 40px 20px;
+  }
+  .text-big{
+    margin-left: 55px;
+    margin-bottom: 100px;
+  }
+.text{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    margin-left: 150px;
+   
+}
+.kot{
+
+    margin: 0px 25px;
+    width: 300px;
+}
+ .hellp{
+    color: #ffff;
+    border: none;
+    background-color: rgba(246, 45, 45, 0.827);
+    height: 40px;
+    width: 220px;
+    font-size: 16px;
+    font-weight: 600;
+ } 
+ @media (max-width: 400px) {
+    .like{
+        margin: 200px 40px 0px 40px;
+    }
+    .yes{
+        margin-left: 50px;
+    }
+    .not{
+        
+    }
+ }
